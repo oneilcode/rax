@@ -1,0 +1,27 @@
+.header_service {
+  background: none !important;
+}
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  .services {
+    padding-top: 450px !important;
+  }
+}
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .services__wrapper {
+    margin-top: 80px;
+  }
+  .services__wrapper .offer__img img {
+    margin-right: 0;
+  }
+  .services {
+    padding-top: 616px !important;
+  }
+}

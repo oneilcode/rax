@@ -1,0 +1,170 @@
+/* PLUG-PAGE */
+.mechanic {
+  padding: 100px 0;
+  background: url("../img/bg.webp") no-repeat center left,
+    url("../img/plug.webp") no-repeat center center/contain;
+  background-size: 100px 700px, 550px 550px;
+}
+.mechanic-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mechanic-works__title {
+  max-width: 530px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 53px;
+}
+.mechanic-works__text {
+  width: 435px;
+  color: #525f7f;
+}
+.mechanic-contacts {
+  max-width: 530px;
+}
+.mechanic-logo img {
+  max-width: 350px;
+  height: auto;
+}
+.mechanic-contacts__logo {
+  margin-bottom: 70px;
+  text-align: center;
+}
+.mechanic-contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mechanic-contacts__link {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.contacts__link_behance::before {
+  background: url("../img/behance.webp") no-repeat center;
+}
+.mechanic-contacts__link_skype {
+  margin-right: 74px !important;
+}
+.mechanic-contacts__link_telegram {
+  margin-right: 93px !important;
+}
+.services-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.services-wrapper__item {
+  font-size: 18px;
+}
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  .mechanic {
+    padding: 50px 0;
+    background: url("../img/plug.webp") no-repeat center center/contain;
+    background-size: 550px 550px;
+  }
+  .services-wrapper {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .mechanic-works {
+    margin-right: 50px;
+  }
+  .mechanic-works__title {
+    width: 100%;
+    margin-bottom: 20px;
+    line-height: 40px;
+  }
+  .mechanic-contacts {
+    margin: auto;
+  }
+  /* .mechanic-contacts__list {
+    flex-direction: column;
+  } */
+  .mechanic-contacts__logo {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .mechanic-wrapper {
+    justify-content: space-around;
+  }
+  .about__offer_item {
+    margin-bottom: 15px !important;
+  }
+}
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  .mechanic-wrapper {
+    display: block;
+  }
+  .mechanic-works {
+    margin-bottom: 40px;
+  }
+  .mechanic-works__text {
+    width: auto;
+  }
+  .mechanic {
+    padding: 30px 0;
+  }
+  .services-wrapper {
+    margin-top: 30px;
+  }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  .about__offer_item {
+    font-size: 18px !important;
+  }
+  .mechanic-works__text {
+    text-align: justify;
+    font-size: 19px;
+  }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+  .container {
+    padding: 0 15px;
+  }
+  .mechanic {
+    background-size: 300px 300px;
+  }
+  .about__offer_item::before {
+    width: 27px !important;
+  }
+  .mechanic-works__title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .mechanic-works {
+    margin-right: 0;
+  }
+  .services-wrapper {
+    margin-top: 5px;
+  }
+  .services-wrapper__title {
+    font-size: 20px !important;
+    margin-bottom: 15px !important;
+  }
+  .services-wrapper__item {
+    font-size: 14px !important;
+  }
+  .mechanic-contacts__logo {
+    margin-bottom: 20px;
+  }
+  .about__offer_item::before {
+    margin-right: 5px !important;
+  }
+}
