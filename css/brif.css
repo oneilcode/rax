@@ -1,0 +1,229 @@
+/* modal-window-brief */
+/* MODAL WINDOW */
+.modal-wrapper,
+.modal-wrapper_mobile,
+.modal-wrapper_popup,
+.service-wrapper_popup {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.modal-mobile {
+  display: none;
+}
+.modal-wrapper.active,
+.modal-wrapper_mobile.active,
+.modal-wrapper_popup.active,
+.service-wrapper_popup.active,
+.mobile-menu.active {
+  display: block !important;
+}
+.modal-form img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.modal-window {
+  position: relative;
+  background-image: linear-gradient(to right, #4194fc 0%, #0bded3 100%);
+  background: url("../img/brifbg.png") no-repeat;
+  border-radius: 9px;
+  width: 1230px;
+  height: 860px;
+  padding: 83px 100px;
+  position: fixed;
+  box-shadow: 0px 20px 40px rgb(0 0 0 / 9%);
+  z-index: 10;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+.modal-offer__img {
+  position: absolute;
+  left: 50px;
+  bottom: 0;
+  width: 468px;
+  height: 384px;
+}
+.overlay {
+  position: fixed;
+  background: rgba(18, 18, 20, 0.8);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card-modal {
+  position: relative;
+  background: url("../img/brief2.webp") no-repeat left bottom,
+    url("../img/brif.png") no-repeat right top,
+    linear-gradient(to right, #4194fc 0%, #0bded3 100%);
+  max-width: 1230px;
+  width: 100%;
+  padding: 70px 110px;
+  border-radius: 20px;
+  z-index: 2;
+}
+.modal-close {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+.close-btn {
+  background: url("../img/close-btn.webp") no-repeat center center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+.modal-window__offer {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-offer {
+  max-width: 340px;
+  margin: 0 auto;
+}
+.modal-offer__title {
+  font-size: 91px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 90px;
+}
+.modal-offer__title-big {
+  font-size: 111px;
+  letter-spacing: -3.45px;
+  margin-top: 50px;
+}
+.modal-offer__text {
+  font-size: 16px;
+  line-height: 27px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form__title {
+  font-size: 44px;
+  font-weight: 700;
+  color: #32325d;
+}
+.modal-form-text {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 73px;
+}
+.form-brief {
+  width: 430px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #32325d;
+  padding-bottom: 12px;
+  font-weight: 700;
+  font-style: normal;
+  opacity: 0.9;
+}
+.form-brief:not(:last-of-type) {
+  margin-bottom: 55px;
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #32325d;
+  font-size: 14px;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #32325d;
+  font-size: 14px;
+}
+.form-check {
+  display: flex;
+  align-items: center;
+  margin: -40px 0 30px 45px;
+}
+.form-check p {
+  /* display: inline-block; */
+  font-size: 13px;
+  font-weight: 300;
+  color: #32325d;
+  margin-left: 7px;
+}
+.form-btn {
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50px !important;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 45px;
+  cursor: pointer;
+  margin-left: auto;
+}
+.modal-window_mobile {
+  position: relative;
+  background: url("../img/mobilebrif.webp") no-repeat top right;
+  background-color: #74affd;
+  background-size: 500px 600px;
+  border-radius: 9px;
+  width: 516px;
+  height: auto;
+  padding: 100px 30px;
+  position: fixed;
+  box-shadow: 0px 20px 40px rgb(0 0 0 / 9%);
+  z-index: 10;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+.modal-close_mobile {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.form-btn_mobile {
+  padding: 14px 0 !important;
+  margin-left: auto !important;
+  margin-top: 20px;
+}
+/* popup-call */
+.modal-window_popup {
+  position: relative;
+  width: 599px;
+  height: 861px;
+  background: url("../img/popup.webp") no-repeat top right;
+  background-size: 573px 690px;
+
+  padding: 100px 30px;
+  position: fixed;
+  box-shadow: 0px 20px 40px rgb(0 0 0 / 9%);
+  z-index: 10;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+.modal-form_popup {
+  margin: auto;
+}
+.modal-close_popup {
+  position: absolute;
+  right: 47px;
+  top: 37px;
+}
+/* popup-service */
+.service-window_popup {
+  position: relative;
+  width: 599px;
+  height: 861px;
+  background: url("../img/servicepopup.webp") no-repeat top right;
+  background-size: 582px 700px;
+  padding: 100px 30px;
+  position: fixed;
+  box-shadow: 0px 20px 40px rgb(0 0 0 / 9%);
+  z-index: 10;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
